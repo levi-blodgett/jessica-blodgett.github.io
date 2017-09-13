@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <title>Jessica Smith</title>
+</head>
+
+<body>
+
+
+  <div id="landscape">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-3">
+          <img class="img-circle" src="img/prof.jpg">
+          <h1 class="title">Jessica Smith</h1>
+          <h2>Chemical Engineering Undergraduate</h2>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="center" id="twix">
+            <h1 id="tree">Classes for Fall 2017</h1>
+            <ul>
+              <li id="top_one">Physics Two</li>
+              <li>Heat Transfer</li>
+              <li>Mass Transfer</li>
+              <li>Physical Chemistry</li>
+              <li>Analytical Chemisty Lab</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="container-fluid text-center">
+            <br>
+            <i class="fa fa-envelope-square" aria-hidden="true" id="button" onclick="copyToClipboard('message')" target="_blank"> Email</i>
+            <a href="https://www.linkedin.com/in/jessicasmith/" target="_blank"><i class="fa fa-linkedin primary" id="button2"> LinkedIn</i></a>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="center" id="twix">
+            <h1 id="tree">Classes for Spring 2018</h1>
+            <ul>
+              <li id="top_one">Kinetics</li>
+              <li>Heat Transfer Lab</li>
+              <li>Thermodynamics Two</li>
+              <li>Physical Chemistry Two</li>
+              <li>Technical Communications Two</li>
+              <li>Chemical Process Design, Economics, & Safety</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Mrs. Smith is in her junior year at university, attending the School of Mines and Technology in Rapid City, SD. She has finished two rotations at the French tire manufacturer Michelin.
+    She loves to dance, hike, and meet new people.
+  </p>
+
+  <div id="monkeys">
+    <p id="message" >jessica.smith@mines.sdsmt.edu</p>
+  </div>
+
+  <script>
+  function copyToClipboard(elementId) {
+
+
+    var aux = document.createElement("input");
+    aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(aux);
+
+  }
+  </script>
+
+</body>
+
+</html>
