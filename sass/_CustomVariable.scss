@@ -3,6 +3,9 @@ $bootstrap-sass-asset-helper: false !default;
 // Variables
 // --------------------------------------------------
 
+$parallax-height: 100vh !important;
+$center-margin: 0px auto !important;
+
 $black_middle: rgb(20,20,20);
 $black_op: rgba(0,0,0,0.7);
 $black_ops: rgba(0,0,0,0.4);
@@ -11,6 +14,8 @@ $gold: rgb(255,233,30);
 $gold-transparent: rgba(255,233,30, 0.2);
 $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
 $brand_bg: rgba(51,122,183, 0.2);
+
+$background_one: rgba(0,0,0,0.3);
 
 $middle_one:rgba(128,185,0,0.7);
 $middle_two:rgba(230,128,0,0.7);
@@ -63,7 +68,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          10px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
