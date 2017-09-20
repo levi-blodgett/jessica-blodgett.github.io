@@ -256,7 +256,7 @@ p {
     margin-bottom: 0;
     cursor: pointer;
     border: 2px solid darken($gold, 20%);
-    background: $gold-transparent;
+    background: $g2;
     color: $gold;
     display: inline-block;
     border-radius: 10px;
@@ -270,7 +270,7 @@ p {
 
   #button:hover {
     border-color: darken($gold, 20%);
-    background: darken($gold-transparent, 10%);
+    background: darken($g2, 10%);
     color: darken($gold, 10%);
     transform: scale(1.2);
     text-decoration: none;
