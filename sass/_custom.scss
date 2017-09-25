@@ -152,7 +152,7 @@
 
   width: 100%;
   height: $parallax-height;
-  overflow-y: hidden;
+  overflow-y: auto;
 
 
     .center {
@@ -248,7 +248,7 @@ p {
   width: 100%;
   height: $parallax-height;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 
   #button {
     font-size: 2.5rem;
