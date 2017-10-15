@@ -82,6 +82,7 @@
   background: $gold-transparent;
   color: $gold;
   display: inline-block;
+  transition: ease-in 200ms;
   border-radius: 10px;
   padding: 20px;
   text-shadow:
@@ -95,6 +96,7 @@
   border-color: darken($gold, 20%);
   background: darken($gold-transparent, 10%);
   color: darken($gold, 10%);
+  transition: ease-out 200ms;
   transform: scale(1.2);
   text-decoration: none;
   text-shadow:
@@ -111,6 +113,7 @@
   border: 2px solid $brand-primary;
   background: $brand-bg;
   color: lighten($brand-primary, 10%);
+  transition: ease-in 200ms;
   border-radius: 10px;
   padding: 20px;
   text-shadow:
@@ -124,6 +127,7 @@
   border: 2px solid $brand-primary;
   background: darken($brand_bg, 10%);
   color: $brand-primary;
+  transition: ease-out 200ms;
   transform: scale(1.2);
   text-shadow:
     -1px -1px 0 #000,
@@ -148,6 +152,8 @@
 
   #like {
     margin-bottom: 10px !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased !important;
   }
 
   width: 100%;
@@ -171,7 +177,6 @@
 
 #tree {
   font-size: 4.0rem;
-  background-color: $black_op;
   max-width: 450px;
   margin: $center-margin;
   height: auto;
