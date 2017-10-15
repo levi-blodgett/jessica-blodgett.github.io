@@ -1,7 +1,24 @@
 @charset "UTF-8";
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0); } }
+#landscape .row {
+  animation: 2s ease-out 0s 1 slideFromBottom; }
+
+html {
+  background-color: black; }
+
+body {
+  opacity: 0;
+  transition: opacity 2.5s;
+  -webkit-transition: opacity 2.5s;
+  /* Safari */ }
+
 @font-face {
   font-family: "Roboto";
-  src: url(../bower_components/font-awesome/fonts/FontAwesome.otf); }
+  src: url("../bower_components/font-awesome/fonts/FontAwesome.otf"); }
 @media only screen and (min-width: 1500px) and (max-width: 2000px) {
   html {
     font-size: 9.5px !important;
@@ -128,9 +145,10 @@
     border-radius: 100%;
     display: block;
     margin: 0px auto !important; }
-  #landscape h1, #landscape h2 {
+  #landscape h1,
+  #landscape h2 {
     width: 100%;
-    padding: 0px 5px;
+    padding: 0 5px;
     margin: 0px auto !important;
     text-align: center;
     font-weight: 200;
