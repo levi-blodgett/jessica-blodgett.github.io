@@ -49,6 +49,7 @@
   background: rgba(255, 233, 30, 0.2);
   color: #ffe91e;
   display: inline-block;
+  transition: ease-in 200ms;
   border-radius: 10px;
   padding: 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
@@ -57,6 +58,7 @@
   border-color: #b7a500;
   background: rgba(234, 211, 0, 0.2);
   color: #ead300;
+  transition: ease-out 200ms;
   transform: scale(1.2);
   text-decoration: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
@@ -68,6 +70,7 @@
   border: 2px solid #337ab7;
   background: rgba(51, 122, 183, 0.2);
   color: #5094ce;
+  transition: ease-in 200ms;
   border-radius: 10px;
   padding: 20px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
@@ -76,6 +79,7 @@
   border: 2px solid #337ab7;
   background: rgba(40, 95, 143, 0.2);
   color: #337ab7;
+  transition: ease-out 200ms;
   transform: scale(1.2);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
@@ -88,7 +92,9 @@
   height: 100vh !important;
   overflow-y: auto; }
   #landscape #like {
-    margin-bottom: 10px !important; }
+    margin-bottom: 10px !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased !important; }
   #landscape .center {
     width: auto;
     min-width: 50%;
@@ -103,7 +109,6 @@
     border: 2px solid rgba(0, 0, 0, 0.4); }
   #landscape #tree {
     font-size: 4.0rem;
-    background-color: rgba(0, 0, 0, 0.7);
     max-width: 450px;
     margin: 0px auto !important;
     height: auto;
