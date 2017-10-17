@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -126,3 +127,133 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <title>Jessica Blodgett</title>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+
+
+  <div id="landscape">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2 col-md-5 col-lg-2">
+        </div>
+        <div class="col-xs-9 col-md-3 col-lg-9">
+        </div>
+        <div class="col-xs-2 col-md-5 col-lg-2">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-lg-2">
+        </div>
+        <div class="col-xs-13 col-md-13 col-lg-9" id="like">
+          <img class="img-circle" src="img/prof.jpg">
+          <h1 class="title">Jessica Blodgett</h1>
+          <h2>Chemical Engineering Undergraduate</h2>
+        </div>
+        <div class="col-md-5 col-lg-2">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-13 col-sm-13 col-md-5 col-lg-5">
+          <div class="center" id="twix">
+            <h1 id="tree">Classes for Fall 2017</h1>
+            <ul>
+              <li id="top_one"><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=13297" target="_blank">Physics Two</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12484" target="_blank">Heat Transfer</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12485" target="_blank">Mass Transfer</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12639" target="_blank">Physical Chemistry</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=8&coid=9525" target="_blank">Analytical Chemisty</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12661" target="_blank">Analytical Chemisty Lab</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-13 col-sm-13 col-md-3 col-lg-3">
+          <div class="container-fluid text-center">
+            <br>
+            <i title="Copy Email to Clipboard" class="fa fa-envelope-square" aria-hidden="true" id="button" onclick="copyToClipboard('message')" target="_blank"> Email</i>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/jessica-smith-18159514a/" target="_blank"><i class="fa fa-linkedin primary" id="button2"> LinkedIn</i></a>
+          </div>
+        </div>
+        <div class="col-xs-13 col-sm-13 col-md-5 col-lg-5">
+          <div class="center" id="twix">
+            <h1 id="tree">Classes for Spring 2018</h1>
+            <ul>
+              <li id="top_one"><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12489" target="_blank">Kinetics</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12531" target="_blank">Heat Transfer Lab</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12486" target="_blank">Thermodynamics Two</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12641" target="_blank">Physical Chemistry Two</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=11&coid=12805" target="_blank">Technical Communications Two</a></li>
+              <li><a href="http://ecatalog.sdsmt.edu/preview_course_nopop.php?catoid=13&coid=15637" target="_blank">Chemical Process Design, Economics, & Safety</a></li>
+           </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Hello! I am Jessica Blodgett (formerly Jessica Smith), as I have recently married the man of my dreams. Currently,
+    I am a junior at the South Dakota School of Mines and Technology and am studying Chemical Engineering. I enjoy hiking, dancing, and any way of staying active.
+    Working with people is a passion of mine, especially kids. I love a challenge and learning new things of all sorts.
+  </p>
+
+  <div id="fall">
+    <p id="message" >jessica.smith@mines.sdsmt.edu</p>
+    <center id="margin">
+    <object data="img/Jessica-Blodgett-Resume.pdf" width="666.66" height="750" type='application/pdf'>
+      <embed src="img/Jessica-Blodgett-Resume.pdf" width="666.66" height="750" type='application/pdf'>
+    </object>
+    <center>
+      <div class="container text-center">
+        <a href="img/Jessica-Blodgett-Resume.pdf" download="Jessica-Blodgett-Resume.pdf" id="button">
+        Download my Resume
+        <i class="fa fa-external-link" aria-hidden="true"></i>
+      </a>
+      <footer>
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2017
+          <br>
+          Website by <a href="http://leviblodgett.com" target="_blank" id="gg">Levi Blodgett</a>
+        </p>
+      </footer>
+      </div>
+
+
+  </div>
+
+  <script>
+  function copyToClipboard(elementId) {
+
+
+    var aux = document.createElement("input");
+    aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+    document.body.appendChild(aux);
+    aux.select();
+    document.execCommand("copy");
+
+    document.body.removeChild(aux);
+
+    return confirm('Email copied to clipboard!');
+
+  }
+  </script>
+
+  <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+>>>>>>> 312f7ee003af1f16508db4c3edf741e83ec817e0

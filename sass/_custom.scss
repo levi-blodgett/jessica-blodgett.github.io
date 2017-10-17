@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // LOAD IN ANIMATIONS
 
 @keyframes slideFromLeft {
@@ -275,3 +276,282 @@ p {
     }
   }
 }
+=======
+// LOAD IN ANIMATIONS
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#landscape {
+  .row {
+    animation: 2s ease-out 0s 1 slideFromLeft;
+  }
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  opacity: 0;
+  transition: opacity 2.5s;
+  -webkit-transition: opacity 2.5s;
+  /* Safari */
+}
+// FONTS AND SIZES
+@font-face {
+  font-family: "Roboto";
+  src: url("../bower_components/font-awesome/fonts/FontAwesome.otf");
+}
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  html {
+    font-size: 9.5px !important;
+    line-height: 1.6875;
+    font-family: "Roboto", "monospace";
+  }
+}
+@media only screen and (min-width: 1150px) and (max-width: 1500px) {
+  html {
+    font-size: 8px !important;
+    line-height: 1.6875;
+    font-family: "Roboto", "monospace";
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 1150px) {
+  html {
+    font-size: 5.2px !important;
+    line-height: 1.6875;
+    font-family: "Roboto", "monospace";
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 750px) {
+  html {
+    font-size: 4px !important;
+    line-height: 1.6875;
+    font-family: "Roboto", "monospace";
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  html {
+    font-size: 4px !important;
+    line-height: 1.6875;
+    font-family: "Roboto", "monospace";
+  }
+}
+// BACKGROUND SETTING UP
+@mixin parallax-background($file) {
+  background: url($file) no-repeat center center fixed;
+  @include background-size(cover);
+}
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+#landscape {
+  @include parallax-background("../img/landscape.jpg");
+}
+
+#fall {
+  @include parallax-background("../img/fall.jpg")
+}
+// BUTTONS
+#button {
+  font-size: 2.5rem;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid darken($gold, 20%);
+  background: $gold-transparent;
+  color: $gold;
+  display: inline-block;
+  transition: ease-in 200ms;
+  border-radius: 10px;
+  padding: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#button:hover {
+  border-color: darken($gold, 20%);
+  background: darken($gold-transparent, 10%);
+  color: darken($gold, 10%);
+  transition: ease-out 200ms;
+  transform: scale(1.2);
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#button2 {
+  font-size: 2.5rem;
+  margin: 10px;
+  display: inline-block;
+  border: 2px solid $brand-primary;
+  background: $brand-bg;
+  color: lighten($brand-primary, 10%);
+  transition: ease-in 200ms;
+  border-radius: 10px;
+  padding: 20px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#button2:hover {
+  border: 2px solid $brand-primary;
+  background: darken($brand_bg, 10%);
+  color: $brand-primary;
+  transition: ease-out 200ms;
+  transform: scale(1.2);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+// HIDDEN MESSAGE FOR EMAIL FUNCTION
+#message {
+  visibility: hidden;
+  position: absolute;
+}
+// LANDSCAPE EDITING
+#landscape {
+  #like {
+    margin-bottom: 10px !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  width: 100%;
+  height: $parallax-height;
+  overflow-y: auto;
+
+  .center {
+    width: auto;
+    min-width: 50%;
+    max-width: 75%;
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+    margin: $center-margin;
+    padding-top: 10px;
+    background: $black_op;
+    border-radius: 20px;
+    border: 2px solid $black_ops;
+  }
+
+  #tree {
+    font-size: 4.0rem;
+    max-width: 450px;
+    margin: $center-margin;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  ul {
+    list-style-type: square;
+
+    li {
+      margin: 10px;
+      font-size: 3.0rem;
+      color: #fff;
+      text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+    }
+  }
+
+  .img-circle {
+    top: 20px;
+    border: 2px solid $black_op;
+    border-radius: 100%;
+    display: block;
+    margin: $center-margin;
+  }
+
+  h1,
+  h2 {
+    width: 100%;
+    padding: 0 5px;
+    margin: $center-margin;
+    text-align: center;
+    font-weight: 200;
+    font-size: 3.0rem;
+    line-height: 1.0;
+    color: #fff;
+    text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+  }
+}
+// MIDDLE SECTION EDITING
+p {
+  border: 2px solid black;
+  background: $black_middle;
+  width: 100%;
+  padding: 5%;
+  margin: $center-margin;
+  text-align: center;
+  font-size: 2.0rem;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+// FALL EDITING
+#fall {
+  width: 100%;
+  height: $parallax-height;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  #button {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    border: 2px solid darken($gold, 20%);
+    background: $g2;
+    color: $gold;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  #button:hover {
+    border-color: darken($gold, 20%);
+    background: darken($g2, 10%);
+    color: darken($gold, 10%);
+    transform: scale(1.2);
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  #margin {
+    margin-top: 30px;
+  }
+
+  p {
+    margin: 10px auto !important;
+    padding: 0 !important;
+    border: transparent;
+    background: transparent;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 200;
+    line-height: 1.4;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      background-color: $brand-bg;
+      color: $brand-primary;
+      transform: scale(1.5);
+      text-decoration: none;
+    }
+  }
+}
+>>>>>>> 312f7ee003af1f16508db4c3edf741e83ec817e0
